@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+  <link rel="stylesheet" type="text/css" href="./style.css">  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+  <div id="wrap-all">
+    <div id="data-section">
+      <div id="content-wrap">
+        <h1>IP Address Tracker</h1>
+        <div id="input-wrap">
+          <input id="input" type="text">
+          <button id="input-btn">
+            <img src="./images/icon-arrow.svg" alt="">
+          </button>
+        </div>
+        <div id="infos-container">
+          <div>
+            <h3 class="info-h">IP Address</h3>
+            <p class="info" id="ip"></p>            
+          </div>
+          <div>
+            <h3 class="info-h">Location</h3>
+            <p class="info" id="location"></p>           
+          </div>
+          <div>
+            <h3 class="info-h">Timezone</h3>
+            <p class="info" id="timezone"></p>            
+          </div>
+          <div>
+            <h3 class="info-h">ISP</h3>
+            <p class="info" id="isp"></p>
+          </div>
+        </div>  
+      </div>
+    </div>   
+
+    <div id="map">      
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/fitforlife66">FitforLife66</a>.
+    </div>
+</div>
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <script src="./script.js"></script>
+</body>
+</html>
